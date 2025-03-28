@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>question of sclicing</h3>
+    <h3>Array</h3>
+    <pre>An array is a special variable, which can hold more than one value
+        const cars = ["Saab", "Volvo", "BMW"];
+    </pre>
+<h3>  method of Array</h3>
+<h3> push()</h3>
+<pre>
+    The push() method adds a new element to an array (at the end):
+    Example
+    const arr1 = ["Ruchi", "I", "am" ,"Developer"];
+    let res1 = arr1.push("And");
+    console.log(res1);
+</pre>
+ <h3>Arrays slice()</h3>
+ <pre>
+    The splice() method can be used to add new items to an array:
+    Example
+    const arr2 = ["Ruchi", "I","am" ,"Developer"];
+    let res2 = arr2.slice(1);
+    console.log(res2);
+ </pre>
+ <h3>toString()</h3>
+ <pre>
+    The JavaScript method toString() converts an array to a string of (comma separated) array values.
+    Example 
+    const arr3 = ["Ruchi", "I","am", "Developer"];
+    let res3 = arr3.toString(1, 2);
+    console.log(res3);
+</pre>
+<h3>shift()</h3>
+<pre>
+    The shift() method removes the first array element and "shifts" all other elements to a lower index.
+    Example
+    const arr4 = ["Ruchi", "I","am", "Developer","Reshu"];
+    let res4 = arr4.shift();
+    console.log(res4);
+    console.log(arr4);
+</pre>
+<h3>Map()</h3>
+<pre>
+    Return a new array with the square root of all element values:
+    Example
+    let array = [2,4,5,8,12];
+    let result = array.map((y) => y*3);
+    console.log(result);
+</pre>
+<h3>pop()</h3>
+<pre>
+    The pop() method removes the last element from an array:
+    Example
+    const array1 = ["Ruchi", "I","am", "Developer","Reshu"];
+    let result1 = array1.pop();
+    console.log(result1);
+</pre>
+<h3>filter()</h3>
+<pre>
+    The filter() method creates a new array filled with elements that pass a test provided by a function.
+    The filter() method does not execute the function for empty elements.
+    The filter() method does not change the original array.
+    Example
+    const array2 = ["Ruchi", "I","am", "Developer","Reshu"];
+    let result2 = array2.filter( word => word.length > 3);
+    console.log(result2);
+</pre>
+<h3>lenth()</h3>
+<pre>
+    The length property returns the length (size) of an array:
+    Example
+    const array3 = ["Ruchi", "I","am", "Developer","Reshu"];
+    let result3 = array3.length;
+    console.log(result3);
+</pre>
+<h3>find()</h3>
+<pre>
+    The find() method returns the value of the first array element that passes a test function.
+    Example
+    let array4 = [2,4,5,8,12];
+    let result4 = array4.find((x)=>x==4);
+    console.log(result4);
+</pre>
+<h3>findIndex()</h3>
+<pre>
+    The findIndex() method returns the index of the first array element that passes a test function
+    Example
+    let array5 = [2,4,5,8,12,6,7];
+    let result5 = array5.findIndex(x=> x == 8);
+    console.log(result5);
+</pre>
+
+<h3>includes()</h3>
+<pre>
+    Array.includes() to arrays. This allows us to check if an element is present in an array (including NaN, unlike indexOf).
+    Example
+    let array6 =["Ruchi", "I","am", "Developer","Reshu"];
+    let result6 = array6.includes("Developer")
+    console.log(result6);
+   </pre>
+    <script src="index.js"></script>
+</body>
+</html>
